@@ -219,7 +219,7 @@ const Home: React.FC = () => {
           Commitment to <span className="text-danger">impactful</span> change
           and <span className="text-danger"> community welfare</span>
         </h2>
-        <motion.p className="pt-2 text-muted support-mission-C" ref={{ref8}} initial={{opacity: 1, x: -100}} 
+        <motion.p className="pt-2 text-muted support-mission-C" ref={ref8} initial={{opacity: 1, x: -100}} 
             animate={{opacity: inview8 ? 1 : 0, x: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
           Discover our commitment to social welfare, ethical governnance, and
           impactful change
