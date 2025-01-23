@@ -228,7 +228,7 @@ const Home: React.FC = () => {
 
       <div className="container-fluid pt-5 pb-5 ps-3 pe-3">
         <motion.h2 className="pe-2 support-mission" ref={ref9} initial={{y: -50}}
-          animate={{y: inview9 ? 0 : -50}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          animate={{y: inview9 ? 0 : -50}} transition={{duration: 1, ease: 'easeIn'}}>
           Commitment to <span className="text-danger">impactful</span> change
           and <span className="text-danger"> community welfare</span>
         </motion.h2>
