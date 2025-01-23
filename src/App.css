@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.heart {
+  font-size: 40px;
+}
+.human {
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.rights {
+  font-size: 10px;
+}
+.header {
+  padding-left: 25%;
+}
+.pe {
+  padding-right: 45%;
+  padding-left: 35%;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+.slider img {
+  flex-shrink: 0;
+  width: 100%;
+  padding-bottom: 50px;
+  height: 400px;
+}
+.slider-container {
+  margin-top: 75px;
+  overflow: hidden;
+  padding-top: 0px;
+  width: 100%;
+  height: 400px;
+}
+.overlay {
+  position: absolute;
+  top: 90px;
+  font-size: 1.3rem;
+  transform: translateX(10px);
+  color: #fff;
+  animation-name: slideIn;
+  animation-duration: 1.5s;
+  margin-left: 10px;
+}
+.overla {
+  position: absolute;
+  top: 100px;
+  padding-top: 40px;
+  font-size: 1.8rem;
+  transform: translateX(10px);
+  color: #fff;
+  animation-name: bold;
+  animation-duration: 1s;
+  margin-left: 10px;
+}
+.bott {
+  position: absolute;
+  top: 180px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  left: 10px;
+  transform: translateY(10px);
+  animation-name: bott;
+  animation-duration: 1.5s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+}
+@keyframes bold {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+}
+@keyframes bott {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+.text-container {
+  margin-top: -60px;
+}
+.cardd {
+  border-radius: 15px;
+}
+.mission {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.donate {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.cardd2 {
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.round {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.accord {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+@media (min-width: 760px) {
+  .missionTextP {
+    padding-top: 5%;
+  }
+  .support-mission {
+    text-align: center;
+  }
+  .support-mission-C {
+    margin: 0 20%;
+    text-align: center;
+  }
+}
+.imageWidth {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+@media (min-width: 760px) {
+  .grid1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .engage {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  }
+  .eng {
+    margin-top: 20px;
+  }
+  .woman_love {
+    display: none;
+  }
+  .card_edu_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 12px;
+  }
+  .grid_back_image {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .think1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .round {margin-left: 10%; margin-right: 10%;}
+}
+@media (max-width: 760px) {
+  .grid2Top {
+    margin-top: 30px;
+  }
+  .engagement {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 10px;
+  }
+}
+.active {
+  background-color: #ff0000;
+}
+
+.hover2 {
+  width: 100%;
+  text-align: left;
+}
+
+.woman_love {
+  margin: 15px 10px 0px 10px;
+  border-radius: 12px;
+  width: 100%;
+  margin-top: 30px;
+}
+.card_edu {
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.read {
+  font-weight: bold;
+  border: 0.5px solid #dedede;
+  background-color: white;
+  border-radius: 30px;
+}
+.readd {
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+.image_cover {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: -24px;
+  margin-bottom: -60px;
+}
+.row_grid {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+.overflow {
+  overflow: hidden;
+}
+.think {
+  border-radius: 30px;
+  color: #fff;
+  width: 160px;
+}
+.testimonial {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 0px 0px 20px 0px;
+}
+.textmonialImage {border-radius: 50%; width: 40px; height: 40px; margin-top: 6px;}
