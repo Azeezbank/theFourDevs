@@ -88,6 +88,14 @@ const Home: React.FC = () => {
     triggerOnce: true,
     threshold: 0.5
   });
+  const [ref10, inview10] = useInView({
+    triggerOnce: true,
+    threshold: 0.5
+  });
+  const [ref11, inview11] = useInView({
+    triggerOnce: true,
+    threshold: 0.5
+  });
   
 
   useEffect(() => {
@@ -434,14 +442,16 @@ const Home: React.FC = () => {
       </div>
 
       <div className="container-fluid bg-light pt-5 pb-5 ps-3 pe-3">
-        <h2 className="pe-2 support-mission">
+        <motion.h2 className="pe-2 support-mission" ref={ref10} initial={{y: -50}}
+          animate={{y: inview10 ? 0 : -50}} transition={{duration: 1.5, ease: 'easeIn'}}>
           Support <span className="text-danger">our mission,</span> change lives
           today
-        </h2>
-        <p className="text-muted support-mission-C">
+        </motion.h2>
+        <motion.p className="text-muted support-mission-C" ref={ref11} initial={{scale: 0.1}} 
+            animate={{scale: inview11 ? 1 : 0.1}} transition={{duration: 1.5}}>
           Your donation empower us to continue our vital work, creating lasting
           impact and positive change
-        </p>
+        </motion.p>
         <div className="p-2 grid1">
           <motion.div className="bg-white rounded grid2Top" ref={ref2} initial={{opacity: 1, x: -50}} animate={{opacity: inview2 ? 1 : 0, x: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <img className="imageWidth " src={clean} alt="clean water" />
