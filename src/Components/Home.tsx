@@ -550,11 +550,11 @@ const Home: React.FC = () => {
           Reasons to trust our <br />{" "}
           <span className="text-danger">commitment</span> and impact
         </motion.h3>
-        <p className="text-muted support-mission-C pt-2" ref={ref13} initial={{y: 50}} 
+        <motion.p className="text-muted support-mission-C pt-2" ref={ref13} initial={{y: 50}} 
             animate={{y: inview13 ? 0 : 50}} transition={{duration: 1.5}}>
           Connect with us - your gateway to engaging with our mission and
           contributing to positive change.
-        </p>
+        </motion.p>
         <div className="engage mt-5">
           <motion.div className="engagement" ref={ref5} initial={{y: 50, scale: 0.1}} animate={{y: inview5 ? 0 : 50, scale: inview5 ? 1 : 0.1}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <h2 className="mt-4">
