@@ -451,7 +451,7 @@ const Home: React.FC = () => {
 
       <div className="container-fluid bg-light pt-5 pb-5 ps-3 pe-3">
         <motion.h2 className="pe-2 support-mission" ref={ref10} initial={{y: -50}}
-          animate={{y: inview10 ? 0 : -50}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          animate={{y: inview10 ? 0 : '-50'}} transition={{duration: 1.5, ease: 'easeIn'}}>
           Support <span className="text-danger">our mission,</span> change lives
           today
         </motion.h2>
@@ -487,7 +487,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </motion.div>
-          <motion.div className="bg-white rounded grid2Top" ref={ref3} initial={{opacity: 1, y: 50, scale: 0.1}} animate={{opacity: inview3 ? 1 : 0, y: 0, scale: inview3 ? 1 : 0.1}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          <motion.div className="bg-white rounded grid2Top" ref={ref3} initial={{opacity: 1, y: 50, scale: 0.1}} animate={{opacity: inview3 ? 1 : 0, y: inview3 ? 0 : 50, scale: inview3 ? 1 : 0.1}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <img className="imageWidth" src={hunger} alt="clean water" />
             <div className="p-3">
               <h5>Ending hunger - donate for access to food</h5>
