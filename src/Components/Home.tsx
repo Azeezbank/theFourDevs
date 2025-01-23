@@ -336,8 +336,8 @@ const Home: React.FC = () => {
           </div>
 
           <div className="round bg-light round p-4">
-            <motion.div className="cardd2" ref={ref1} initial={{opacity: 0, y: 50}} 
-            animate={{opacity: inview1 ? 1 : 0, y: 0}} transition={{duration: 1.5, ease: 'easeIn'}}
+            <motion.div className="cardd2" ref={ref1} initial={{y: 50}} 
+            animate={{y: inview1 ? 0 : 50}} transition={{duration: 1.5, ease: 'easeIn'}}
             >
               <div
                 id="collapseOne"
