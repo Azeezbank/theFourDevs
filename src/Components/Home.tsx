@@ -220,7 +220,7 @@ const Home: React.FC = () => {
           and <span className="text-danger"> community welfare</span>
         </h2>
         <motion.p className="pt-2 text-muted support-mission-C" ref={ref8} initial={{scale: 1}} 
-            animate={{scale: inview8 ? 0.8 : 1}} transition={{duration: 1}>
+            animate={{scale: inview8 ? 0.8 : 1}} transition={{duration: 1}}>
           Discover our commitment to social welfare, ethical governnance, and
           impactful change
         </motion.p>
