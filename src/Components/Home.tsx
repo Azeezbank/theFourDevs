@@ -80,6 +80,10 @@ const Home: React.FC = () => {
     triggerOnce: true,
     threshold: 0.5
   });
+  const [ref8, inview8] = useInView({
+    triggerOnce: true,
+    threshold: 0.5
+  });
   
 
   useEffect(() => {
@@ -215,10 +219,11 @@ const Home: React.FC = () => {
           Commitment to <span className="text-danger">impactful</span> change
           and <span className="text-danger"> community welfare</span>
         </h2>
-        <p className="pt-2 text-muted support-mission-C">
+        <motion.p className="pt-2 text-muted support-mission-C" ref={{ref8}} initial={{opacity: 1, x: -100}} 
+            animate={{opacity: inview8 ? 1 : 0, x: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
           Discover our commitment to social welfare, ethical governnance, and
           impactful change
-        </p>
+        </motion.p>
 
         <div id="accordion">
           <div className=" round bg-light mt-5">
