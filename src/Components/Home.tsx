@@ -556,7 +556,7 @@ const Home: React.FC = () => {
           contributing to positive change.
         </motion.p>
         <div className="engage mt-5">
-          <motion.div className="engagement" ref={ref5} initial={{y: 50, scale: 0.1}} animate={{y: inview5 ? 0 : 50, scale: inview5 ? 1 : 0.1}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          <motion.div className="engagement" ref={ref5} initial={{y: 50, scale: 0.6}} animate={{y: inview5 ? 0 : 50, scale: inview5 ? 1 : 0.1}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <h2 className="mt-4">
               {" "}
               <i className="bi bi-cookie bg-danger p-3 round rounded-circle text-white">
@@ -571,7 +571,7 @@ const Home: React.FC = () => {
               </p>
             </div>
           </motion.div>
-          <motion.div className="engagement" ref={ref6} initial={{opacity: 0, y: 50}} animate={{opacity: inview6 ? 1 : 0, y: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          <motion.div className="engagement" ref={ref6} initial={{y: 50}} animate={{y: inview6 ? 0 : 50}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <h2 className="mt-4">
               <i className="bi bi-browser-safari bg-danger p-3 round rounded-circle text-white"></i>
             </h2>
@@ -583,7 +583,7 @@ const Home: React.FC = () => {
               </p>
             </div>
           </motion.div>
-          <motion.div className="engagement" ref={ref7} initial={{opacity: 0, x: -50}} animate={{opacity: inview7 ? 1 : 0, x: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          <motion.div className="engagement" ref={ref7} initial={{y: 50}} animate={{y: inview7 ? 0 : 50}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <h2 className="mt-4">
               <i className="bi bi-people bg-danger p-3 round rounded-circle text-white"></i>
             </h2>
