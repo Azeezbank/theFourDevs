@@ -84,6 +84,10 @@ const Home: React.FC = () => {
     triggerOnce: true,
     threshold: 0.5
   });
+  const [ref9, inview9] = useInView({
+    triggerOnce: true,
+    threshold: 0.5
+  });
   
 
   useEffect(() => {
@@ -215,12 +219,13 @@ const Home: React.FC = () => {
       </div>
 
       <div className="container-fluid pt-5 pb-5 ps-3 pe-3">
-        <h2 className="pe-2 support-mission">
+        <motion.h2 className="pe-2 support-mission" ref={ref9} initial={{opacity: 1, x: 100%}}
+          animate={{opacity: inview9 ? 1, x: 0}} transition={{duration: 1.5}}>
           Commitment to <span className="text-danger">impactful</span> change
           and <span className="text-danger"> community welfare</span>
         </h2>
         <motion.p className="pt-2 text-muted support-mission-C" ref={ref8} initial={{scale: 0.1}} 
-            animate={{scale: inview8 ? 1 : 1}} transition={{duration: 1}}>
+            animate={{scale: inview8 ? 1 : 0.1}} transition={{duration: 1.5}}>
           Discover our commitment to social welfare, ethical governnance, and
           impactful change
         </motion.p>
