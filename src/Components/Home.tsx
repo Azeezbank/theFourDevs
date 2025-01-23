@@ -96,6 +96,14 @@ const Home: React.FC = () => {
     triggerOnce: true,
     threshold: 0.5
   });
+  const [ref12, inview12] = useInView({
+    triggerOnce: true,
+    threshold: 0.5
+  });
+  const [ref13, inview13] = useInView({
+    triggerOnce: true,
+    threshold: 0.5
+  });
   
 
   useEffect(() => {
@@ -479,7 +487,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </motion.div>
-          <motion.div className="bg-white rounded grid2Top" ref={ref3} initial={{opacity: 1, y: 50}} animate={{opacity: inview3 ? 1 : 0, y: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          <motion.div className="bg-white rounded grid2Top" ref={ref3} initial={{opacity: 1, y: 50, scale: 0.1}} animate={{opacity: inview3 ? 1 : 0, y: 0, scale: inview3 ? 1 : 0.1}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <img className="imageWidth" src={hunger} alt="clean water" />
             <div className="p-3">
               <h5>Ending hunger - donate for access to food</h5>
@@ -537,16 +545,18 @@ const Home: React.FC = () => {
       </div>
 
       <div className="container-fluid ps-4 pe-4 pb-4">
-        <h3 className="support-mission-C pt-5">
+        <motion.h3 className="support-mission-C pt-5" ref={ref12} initial={{y: -50}}
+          animate={{y: inview12 ? 0 : -50}} transition={{duration: 1, ease: 'easeIn'}}>
           Reasons to trust our <br />{" "}
           <span className="text-danger">commitment</span> and impact
-        </h3>
-        <p className="text-muted support-mission-C pt-2">
+        </motion.h3>
+        <p className="text-muted support-mission-C pt-2" ref={ref13} initial={{y: 50}} 
+            animate={{y: inview13 ? 0 : 50}} transition={{duration: 1.5}}>
           Connect with us - your gateway to engaging with our mission and
           contributing to positive change.
         </p>
         <div className="engage mt-5">
-          <motion.div className="engagement" ref={ref5} initial={{opacity: 0, x: -50}} animate={{opacity: inview5 ? 1 : 0, x: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          <motion.div className="engagement" ref={ref5} initial={{y: 50, scale: 0.1}} animate={{y: inview5 ? 0 : 50, scale: inview5 ? 1 : 0.1}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <h2 className="mt-4">
               {" "}
               <i className="bi bi-cookie bg-danger p-3 round rounded-circle text-white">
