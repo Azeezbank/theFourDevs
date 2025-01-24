@@ -228,7 +228,7 @@
   border-radius: 30px;
 }
 .read:hover {
-  width: 90px
+  transform: scale(0.9)
 }
 .readd {
   font-weight: bold;
