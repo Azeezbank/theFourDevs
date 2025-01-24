@@ -227,6 +227,9 @@
   background-color: white;
   border-radius: 30px;
 }
+.read:hover {
+  width: 90px
+}
 .readd {
   font-weight: bold;
   border-radius: 30px;
