@@ -81,27 +81,27 @@ const Home: React.FC = () => {
     threshold: 0.5
   });
   const [ref8, inview8] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.5
   });
   const [ref9, inview9] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.5
   });
   const [ref10, inview10] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.5
   });
   const [ref11, inview11] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.5
   });
   const [ref12, inview12] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.5
   });
   const [ref13, inview13] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.5
   });
   
